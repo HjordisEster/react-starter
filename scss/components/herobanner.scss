@@ -1,0 +1,18 @@
+.herobanner {
+  height: 100vh;
+  width: 100%;
+  background: $main-color;
+  position: relative;
+  &__heading {
+    @include mainText(70px, #555);
+  }
+  &__subtext {
+    @include subText;
+  }
+  &__image__container {
+    width: 40%;
+    div {
+      @include scalablePic('https://images-na.ssl-images-amazon.com/images/M/MV5BODQ0NjIzNjQ3MV5BMl5BanBnXkFtZTgwMTQ3MjgyNzE@._CR187,120,1281,960_UX614_UY460._SY230_SX307_AL_.jpg', 75%);
+    }
+  }
+}
